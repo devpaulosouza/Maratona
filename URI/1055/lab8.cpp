@@ -52,6 +52,8 @@ int main() {
             scanf("%d", &vector[j]);
         }
         printf("Case %d: %d\n", i+1, tiny_sum(vector, size));
+        free(vector);
+        vector = NULL;
     }
     return 0;
 }
